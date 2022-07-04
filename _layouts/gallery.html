@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+
+  {%- if site.gallery.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Albums" }}</h2>
+    <ul class="post-list">
+      {%- for album in site.gallery -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ album.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ album.url | relative_url }}">
+            {{ album.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ album.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+
+</div>

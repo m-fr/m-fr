@@ -1,0 +1,103 @@
+---
+layout: default
+---
+<style>
+.image-grid {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.image-card {
+    box-shadow: 2px 3px 10px lightgray;
+    margin: .5em;
+    width: 45%;
+}
+.image-img {
+}
+.image-text {
+    margin: auto;
+}
+.w3w-embed {
+    margin: auto !important;
+}
+@media (max-width: 512px) {
+    .image-card {
+        width: 95%;
+    }
+}
+</style>
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}</p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {%- if page.album.size > 0 -%}
+    <div class="image-grid" itemscope itemtype="https://schema.org/ImageGallery">
+    
+    {%- for image in page.album -%}
+      {%- if image.img -%}
+        <div class="image-card" itemscope itemtype="http://schema.org/Photograph">
+          <a itemprop="image" title="{{ image.title }}" href="/assets/images/{{ image.img }}">
+            <img alt="{{ image.title | default: page.title }}" class="image-img" itemprop="thumbnailUrl" src="/assets/thumbnails/{{ image.img }}" />
+            <meta itemprop="name" content="{{ image.title | default: page.title }}" />
+            <meta itemprop="isFamilyFriendly" content="true" />
+            
+            {%- if image.date -%}
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+              <meta itemprop="dateCreated" content=" {{ image.date | date: date_format }}" />
+            {%- endif -%}
+
+            <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+              <div itemprop="sameAs" href="{{ site.url }}/about">
+                <meta itemprop="name" content="{{ site.owner.name }}" />
+              </div>
+            </div>
+          </a>
+          
+          <h2 class="image-text">{{ image.title | default: page.title }}</h2>
+
+          {%- if image.description -%}
+            <p class="image-text">{{ image.description }}</p>
+          {%- endif -%}
+            
+          {%- if image.location.w3w -%}
+            <a id="w3wa" href="https://map.what3words.com/{{ image.location.w3w }}" target="_blank">
+              <div class="w3w-embed w3w-small w3w-dark">
+                <style type="text/css">@import url("https://assets.what3words.com/css/w3w-glyphicon.css");</style>
+                <div class="w3w-address">
+                  <i class="w3w-logo-slashes w3w-black" style="">
+                    <svg x="0px" y="0px" viewBox="0 0 32 32"><path fill="currentColor" d="M10.7,4h2L4,28H2L10.7,4z M19.7,4h2L13,28h-2L19.7,4z M28.7,4h2L22,28h-2L28.7,4z"></path></svg>
+                  </i>
+                  <span id="w3wt" class="addr notranslate">{{ image.location.w3w }}</span>
+                </div>
+              </div>
+            </a>
+          {%- endif -%}
+         
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+    
+    </div>
+  {%- endif -%}
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
