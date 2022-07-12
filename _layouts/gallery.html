@@ -2,6 +2,20 @@
 layout: default
 ---
 
+<style>
+.thumbnail {
+    width: 100px;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+@media (max-width: 512px) {
+    .thumbnail {
+        width: 50px;
+    }
+}
+</style>
+
 <div class="home">
 
   {{ content }}
@@ -13,6 +27,8 @@ layout: default
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ album.date | date: date_format }}</span>
+        <span class="post-meta">/</span>
+        <span class="post-meta">{{ album.album.size }} photos</span>
         <h3>
           <a class="post-link" href="{{ album.url | relative_url }}">
             {{ album.title | escape }}
@@ -21,6 +37,9 @@ layout: default
         {%- if site.show_excerpts -%}
           {{ album.excerpt }}
         {%- endif -%}
+        {%- for image in album.album limit: 10 -%}
+          <img alt="{{ image.title | default: page.title }}" class="thumbnail" src="{%- unless image.external -%}{{ site.thumbnails }}{%- endunless -%}{{ image.img }}" />
+        {%- endfor -%}
       </li>
       {%- endfor -%}
     </ul>

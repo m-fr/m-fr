@@ -13,6 +13,10 @@ layout: default
     width: 45%;
 }
 .image-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
 }
 .image-text {
     margin: auto;
@@ -51,8 +55,12 @@ layout: default
     {%- for image in page.album -%}
       {%- if image.img -%}
         <div class="image-card" itemscope itemtype="http://schema.org/Photograph">
-          <a itemprop="image" title="{{ image.title }}" href="/assets/images/{{ image.img }}">
-            <img alt="{{ image.title | default: page.title }}" class="image-img" itemprop="thumbnailUrl" src="/assets/thumbnails/{{ image.img }}" />
+          {%- if image.external -%}
+          <a itemprop="image" title="{{ image.title }}" href="{{ image.external }}">
+          {%- else -%}
+          <a itemprop="image" title="{{ image.title }}" href="{{ site.images }}{{ image.img }}">
+          {%- endif -%}
+            <img alt="{{ image.title | default: page.title }}" class="image-img" itemprop="thumbnailUrl" src="{%- unless image.external -%}{{ site.thumbnails }}{%- endunless -%}{{ image.img }}" />
             <meta itemprop="name" content="{{ image.title | default: page.title }}" />
             <meta itemprop="isFamilyFriendly" content="true" />
             
