@@ -1,0 +1,4 @@
+Contact: mailto:info@m-fr.cz
+Expires: 2022-10-31T11:00:00.000Z
+Preferred-Languages: en,cs
+Canonical: https://www.m-fr.cz/.well-known/security.txt

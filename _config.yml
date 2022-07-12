@@ -1,26 +1,19 @@
 title: m-fr.cz
 author: Michal Franc
-#email: your-email@domain.com
 description: m-fr.cz. Site of Michal Franc.
-webmaster_verifications:
-  google: CMtPahJvRlDHd0gYu4JI5X2lj9eg-_UMxW3I7RKcIqw
-# social links
-#twitter_username: jekyllrb
+
 github_username: m-fr
-rss: rss
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
-# instagram_username: jekyll
-# linkedin_username: jekyll
-# pinterest_username: jekyll
-# youtube_username: jekyll
-# googleplus_username: +jekyll
+rss: blog
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-show_excerpts: true # set to true to show excerpts on the homepage
+include: [".well-known"]
+
+images: "/assets/images/"
+thumbnails: "/assets/thumbnails/"
+
+show_excerpts: true
 
 minima:
   date_format: "%b %-d, %Y"
@@ -40,7 +33,6 @@ feed:
     gallery:
       path: "gallery.xml"
 
-# Build settings
 theme: minima
 
 plugins:
