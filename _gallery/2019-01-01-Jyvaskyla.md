@@ -7,96 +7,137 @@ categories: gallery
 album:
   - title: "Stone"
     description: "Up to the hill."
-    img: 18081509.jpg
+    img: "https://live.staticflickr.com/65535/52211733350_4c361d1317_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211733350/in/album-72177720300490673/"
     location:
       w3w: "weeded.drips.coveted"
   - title: "Niemijärvi"
     description: "Niemijärvi lake surrounded by forest."
-    img: 18081512.jpg
+    img: "https://live.staticflickr.com/65535/52211733385_91d03ab7c3_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211733385/in/album-72177720300490673/"
     location:
       w3w: "handbook.sporting.grudges"
   - title: "Tuomijärvi"
     description: "Look from a side of the Tuomijärvi lake."
-    img: 18081602.jpg
+    img: "https://live.staticflickr.com/65535/52211733390_644dba1cd0_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211733390/in/album-72177720300490673/"
     location:
       w3w: "ideas.personal.tripped"
   - title: "Jyväskylä"
     description: "Northern view from Vesilinna tower, which is located on the top of the Harju hill."
-    img: 18081709.jpg
+    img: "https://live.staticflickr.com/65535/52211247006_44ef399410_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211247006/in/album-72177720300490673/"
     location:
       w3w: "strongly.shops.skew"
   - title: "Fountain"
     description: "Night photo of fountain."
-    img: 18081812.jpg
+    img: "https://live.staticflickr.com/65535/52211267388_8987a60f25_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211267388/in/album-72177720300490673/"
     location:
       w3w: "date.headset.tropic"
   - title: "Kaupunginkirkko"
     description: "Night photo of Jyväskylä city church."
-    img: 18081818.jpg
+    img: "https://live.staticflickr.com/65535/52211733500_1e2e42a44a_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211733500/in/album-72177720300490673/"
     location:
       w3w: "stutter.mulled.copiers"
   - title: "Kaupungintalo"
     description: "Night photo of Jyväskylä Town Hall."
-    img: 18081824.jpg
+    img: "https://live.staticflickr.com/65535/52211521674_b6cec186cf_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211521674/in/album-72177720300490673/"
     location:
       w3w: "zest.flopped.flipper"
   - title: "Lakeland"
     description: "View from Laajavuori hill."
-    img: 18082517.jpg
+    img: "https://live.staticflickr.com/65535/52210242367_2b8cecca35_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52210242367/in/album-72177720300490673/"
     location:
       w3w: "withdraw.calculating.mash"
   - title: "Köhniojärvi"
     description: "Photo of Köhniojärvi in Jyväskylä."
-    img: 18082530.jpg
+    img: "https://live.staticflickr.com/65535/52211733615_01d751d1fd_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211733615/in/album-72177720300490673/"
     location:
       w3w: "arrives.jumbled.addicted"
   - title: "Jyväsjärvi"
     description: "Photo of Jyväskyla lake with Kuokkala district in background."
-    img: 18090413.jpg
+    img: "https://live.staticflickr.com/65535/52211247241_51059ac875_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211247241/in/album-72177720300490673/"
     location:
       w3w: "selects.worked.pastels"
   - title: "Jyväsjärvi"
     description: "Photo of Jyväsjärvi."
-    img: 18090427.jpg
+    img: "https://live.staticflickr.com/65535/52210242487_4af8dab165_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52210242487/in/album-72177720300490673/"
     location:
       w3w: "intelligible.racing.snares"
   - title: "Jyväsjärvi"
     description: "Photo of connection between Lutakko and Kuokkala districts."
-    img: 18091339.jpg
+    img: "https://live.staticflickr.com/65535/52211521784_8d342e6bea_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211521784/in/album-72177720300490673/"
     location:
       w3w: "formed.thrones.inclined"
   - title: "The bridge"
     description: "Photo of bridge between Mattilanniemi and Ylistönrinne."
-    img: 18091370.jpg
+    img: "https://live.staticflickr.com/65535/52211733725_a9ff2be961_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211733725/in/album-72177720300490673/"
     location:
       w3w: "return.rather.impulses"
   - title: "Päijänne"
     description: "Photo of Jyväskylä end of Päijänne."
-    img: 18091610.jpg
+    img: "https://live.staticflickr.com/65535/52210242592_8be91ff2dd_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52210242592/in/album-72177720300490673/"
     location:
       w3w: "sequences.mergers.convinience"
   - title: "Lichen"
-    img: 18091651.jpg
+    img: "https://live.staticflickr.com/65535/52211521899_7976986a90_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211521899/in/album-72177720300490673/"
     location:
       w3w: "withdrew.truth.reddens"
   - title: "Stone alley"
-    img: 18091653.jpg
+    img: "https://live.staticflickr.com/65535/52211267808_a8fd3c30f6_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211267808/in/album-72177720300490673/"
     location:
       w3w: "fogged.bureaucrats.bunker"
-  - img: 18091659.jpg
-  - img: 18092066.jpg
-  - img: 18092203.jpg
-  - img: 18092810.jpg
-  - img: 18092815.jpg
-  - img: 18092819.jpg
-  - img: 18092820.jpg
-  - img: 18092828.jpg
-  - img: 18101310.jpg
-  - img: 18102801.jpg
-  - img: 18102806.jpg
-  - img: 18102814.jpg
-  - img: 18102819.jpg
-  - img: 18102830.jpg
-  - img: 18121805.jpg
-  - img: 18121822.jpg
+  - img: "https://live.staticflickr.com/65535/52211521934_07bc432d52_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211521934/in/album-72177720300490673/"
+  - img: "https://live.staticflickr.com/65535/52211733860_78bfe1cbac_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211733860/in/album-72177720300490673/"
+  - img: "https://live.staticflickr.com/65535/52211522009_1a21896cfb_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211522009/in/album-72177720300490673/"
+  - img: "https://live.staticflickr.com/65535/52210242762_2eab4268ae_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52210242762/in/album-72177720300490673/"
+  - img: "https://live.staticflickr.com/65535/52210242782_b17136ba84_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52210242782/in/album-72177720300490673/"
+  - img: "https://live.staticflickr.com/65535/52211267993_ae2b249de4_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211267993/in/album-72177720300490673/"
+  - img: "https://live.staticflickr.com/65535/52210242872_0034c99920_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52210242872/in/album-72177720300490673/"
+  - img: "https://live.staticflickr.com/65535/52211522134_6619dce495_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211522134/in/album-72177720300490673/"
+  - img: "https://live.staticflickr.com/65535/52210242897_35c7ee11d6_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52210242897/in/album-72177720300490673/"
+  - title: "Pyhä-Häkki"
+    img: "https://live.staticflickr.com/65535/52211247706_535d6c74e9_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211247706/in/album-72177720300490673/"
+  - title: "Pyhä-Häkki"
+    img: "https://live.staticflickr.com/65535/52211247766_d0f5eeb2fd_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211247766/in/album-72177720300490673/"
+  - title: "Pyhä-Häkki"
+    img: "https://live.staticflickr.com/65535/52211247791_2deb409bb1_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211247791/in/album-72177720300490673/"
+  - title: "Pyhä-Häkki"
+    img: "https://live.staticflickr.com/65535/52210243007_da6b47a207_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52210243007/in/album-72177720300490673/"
+  - title: "Pyhä-Häkki"
+    img: "https://live.staticflickr.com/65535/52210243007_da6b47a207_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52210243007/in/album-72177720300490673/"
+  - img: "https://live.staticflickr.com/65535/52211522304_d9732aa2ce_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211522304/in/album-72177720300490673/"
+  - title: "Kaupunginkirkko"
+    description: "Winter photo of Jyväskylä city church at night."
+    img: "https://live.staticflickr.com/65535/52211522324_bc8d054e4a_w.jpg"
+    external: "https://www.flickr.com/photos/195985989@N02/52211522324/in/album-72177720300490673/"
+    location:
+      w3w: "stutter.mulled.copiers"
 ---
