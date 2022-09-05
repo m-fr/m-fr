@@ -12,7 +12,10 @@ layout: default
   {%- if site.gallery.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Gallery" }}</h2>
     <ul class="post-list">
-      {%- for album in site.gallery limit: 5 -%}
+      {%- for album in site.gallery reversed -%}
+        {% if forloop.index > 5 %}
+          {% break %}
+        {% endif %}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ album.date | date: date_format }}</span>
@@ -36,7 +39,10 @@ layout: default
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
-      {%- for post in site.posts limit: 5 -%}
+      {%- for post in site.posts reversed -%}
+        {% if forloop.index > 5 %}
+          {% break %}
+        {% endif %}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>

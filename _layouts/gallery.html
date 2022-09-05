@@ -23,7 +23,7 @@ layout: default
   {%- if site.gallery.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Albums" }}</h2>
     <ul class="post-list">
-      {%- for album in site.gallery -%}
+      {%- for album in site.gallery reversed -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ album.date | date: date_format }}</span>
