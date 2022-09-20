@@ -1,12 +1,7 @@
 title: m-fr.cz
-author: Michal Franc
+author:
+  name: Michal Franc
 description: m-fr.cz. Site of Michal Franc.
-
-github_username: m-fr
-rss: blog
-
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 include: [".well-known"]
 
@@ -17,6 +12,10 @@ show_excerpts: true
 
 minima:
   date_format: "%b %-d, %Y"
+  skin: auto
+  social_links:
+    github: m-fr
+    flickr: 195985989@N02
 
 header_pages:
   - blog.markdown
@@ -30,8 +29,8 @@ collections:
 
 feed:
   collections:
-    gallery:
-      path: "gallery.xml"
+    - gallery
+    - posts
 
 theme: minima
 
