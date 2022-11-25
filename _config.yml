@@ -1,39 +1,180 @@
-title: m-fr.cz
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
+
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+
+theme                    : "minimal-mistakes-jekyll"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Settings
+locale                   : "en-US"
+title                    : "m-fr.cz"
+title_separator          : "-"
+name                     : "Michal Franc"
+description              : "m-fr.cz. Site of Michal Franc."
+url                      : "https://www.m-fr.cz"
+logo                     : "/assets/icons/android-chrome-192x192.png"
+breadcrumbs              : true
+words_per_minute         : 200
+comments:
+  provider               : false
+atom_feed:
+  path                   : "/feed.xml"
+  hide                   : false
+search                   : false
+search_full_content      : false
+
+# Analytics
+analytics:
+  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+
+# Site Author
 author:
-  name: Michal Franc
-description: m-fr.cz. Site of Michal Franc.
+  name             : "Michal Franc"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I am into cybersecurity. I am also interested in coffee, climbing, and photography."
+  links:
+    - label: "Flickr"
+      icon: "fab fa-fw fa-flickr"
+      url: "https://www.flickr.com/photos/195985989@N02"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/m-fr/"
+    - label: "Atom"
+      icon: "fas fa-fw fa-rss-square"
+      url: "/feed.xml"
 
-include: [".well-known"]
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+  - .well-known
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+keep_files:
+  - .git
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-images: "/assets/images/"
-thumbnails: "/assets/thumbnails/"
 
-show_excerpts: true
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
-minima:
-  date_format: "%b %-d, %Y"
-  skin: auto
-  social_links:
-    github: m-fr
-    flickr: 195985989@N02
 
-header_pages:
-  - blog.markdown
-  - gallery.markdown
-  - about.markdown
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path>/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
 
 collections:
   gallery:
-    output: true
-    permalink: /:collection/:year/:month/:day/:title/
+    output: false
+    permalink: /:collection/:path
+  blog:
+    output: false
+    permalink: /:collection/:path
 
-feed:
-  collections:
-    - gallery
-    - posts
-
-theme: minima
-
-plugins:
- - jekyll-feed
- - jekyll-seo-tag
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: false
+      related: true

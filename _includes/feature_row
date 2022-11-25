@@ -1,0 +1,51 @@
+{% if include.id %}
+  {% assign feature_row = page[include.id] %}
+{% else %}
+  {% assign feature_row = page.feature_row %}
+{% endif %}
+
+<div class="feature__wrapper">
+
+  {% for f in feature_row %}
+    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
+      <div class="archive__item">
+        {% if f.image_path %}
+          <div class="archive__item-teaser">
+            <a href="{{ f.url | relative_url }}" title="{{ f.alt | default: f.title | default: page.title }}">
+            <img src="{{ f.image_path | relative_url }}"
+                 alt="{{ f.alt | default: f.title | default: page.title }}">
+            </a>
+            {% if f.image_caption %}
+              <span class="archive__item-caption">{{ f.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+            {% endif %}
+          </div>
+        {% endif %}
+
+        <div class="archive__item-body">
+            <h2 class="archive__item-title">{{ f.title | default: page.title }}</h2>
+
+          {% if f.location %}
+            <a id="w3wa" href="https://map.what3words.com/{{ f.location }}" target="_blank">
+              <div class="w3w-embed w3w-small w3w-dark">
+                <style type="text/css">@import url("https://assets.what3words.com/css/w3w-glyphicon.css");</style>
+                <div class="w3w-address">
+                  <i class="w3w-logo-slashes w3w-black" style="">
+                    <svg x="0px" y="0px" viewBox="0 0 32 32"><path fill="currentColor" d="M10.7,4h2L4,28H2L10.7,4z M19.7,4h2L13,28h-2L19.7,4z M28.7,4h2L22,28h-2L28.7,4z"></path></svg>
+                  </i>
+                  <span id="w3wt" class="addr notranslate">{{ f.location }}</span>
+                </div>
+              </div>
+            </a>
+          {% endif %}
+
+          {% if f.excerpt %}
+            <div class="archive__item-excerpt">
+              {{ f.excerpt | markdownify }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+
+</div>
