@@ -53,6 +53,7 @@ author:
 
 # Reading Files
 include:
+  - staticwebapp.config.json
   - _pages
   - .well-known
 exclude:
