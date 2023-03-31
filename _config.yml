@@ -53,7 +53,6 @@ author:
 
 # Reading Files
 include:
-  - .htaccess
   - _pages
   - .well-known
 exclude:
@@ -81,6 +80,7 @@ exclude:
   - Rakefile
   - README
   - tmp
+  - security.txt
 keep_files:
   - .git
 encoding: "utf-8"

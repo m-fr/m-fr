@@ -1,4 +1,23 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
 Contact: mailto:info@m-fr.cz
-Expires: 2022-10-31T11:00:00.000Z
+Expires: 2023-10-31T11:00:00.000Z
+Encryption: https://www.m-fr.cz/.well-known/pgp-key.txt
 Preferred-Languages: en,cs
 Canonical: https://www.m-fr.cz/.well-known/security.txt
+Canonical: https://m-fr.cz/.well-known/security.txt
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEhwgxzV0I0Pqkc/jiLCvjpQk1V7cFAmQm2psACgkQLCvjpQk1
+V7fi8QwAicJY64cDde6YVhdFTe20NM15Ef+DqQMaOMI7/pqXjukOLDXauf8PQR0d
+gu/RE3OWozZX+N0JkyN0f/ypfpoExsMshc8S5n44D4xYyWHcXKrAga8C7j2bo0XQ
+o4sbXhWNwygJ48wdHuHS/zRcDo8WmGlMLxpYXXpLFD8cDxCkM+PwuAvyLPSXjOLn
++fePx6yL2mvC6y/dOL5mC/WdNT66KXHTti7bn+8fHy2sz5mi+3lucufW9Ki/E3mq
++/0KcTlCpwExTFDbWxwnevCunqLpVyvqD6S0d1qQ0CZ/13jnGw6yKzf2dVGBqM77
+3S81OSDqst5tzSMJo+JVr4lwydG5Lc04kahlE4wg6V8Lnrd1dLP/lryu15WZfLzn
+Wfg+vNhz98iiqVtGmlMeJzY7cEmNhTz9JX8HU5B6SGOaFIyrbvWaecOPNezvU+ri
+dzrFkpxkzMHnmxHRnYNg90H0wsbApdKaA+nFkspw/z5jiQtp+h5qR7rCSJ/2M8KW
+OoTOyi3L
+=tzse
+-----END PGP SIGNATURE-----
