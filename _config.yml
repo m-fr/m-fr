@@ -51,7 +51,7 @@ author:
       icon: "fas fa-fw fa-rss-square"
       url: "/feed.xml"
     - label: "Status"
-      icon: "fas fa-fw fa-badge-check"
+      icon: "fas fa-fw fa-check-circle"
       url: "https://status.m-fr.cz"
 
 # Reading Files
