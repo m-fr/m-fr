@@ -50,6 +50,9 @@ author:
     - label: "Atom"
       icon: "fas fa-fw fa-rss-square"
       url: "/feed.xml"
+    - label: "Status"
+      icon: "fas fa-fw fa-badge-check"
+      url: "https://status.m-fr.cz"
 
 # Reading Files
 include:
