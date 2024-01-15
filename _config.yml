@@ -20,6 +20,7 @@ title_separator          : "-"
 name                     : "Michal Franc"
 description              : "m-fr.cz. Site of Michal Franc."
 url                      : "https://www.m-fr.cz"
+repository               : "m-fr/m-fr"
 logo                     : "/assets/icons/android-chrome-192x192.png"
 breadcrumbs              : true
 words_per_minute         : 200
